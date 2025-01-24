@@ -1,0 +1,3 @@
+ALTER TABLE orders
+ADD CONSTRAINT fk_status FOREIGN KEY (statusid) REFERENCES statuses (id)
+ON DELETE SET NULL;
